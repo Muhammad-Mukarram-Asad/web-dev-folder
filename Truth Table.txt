@@ -1,0 +1,25 @@
+A.salamualaikum
+My Name Is Mukarram Asad.
+
+Here i am making a Truth Table Of Digital Logic Gates.
+Basically there are three basic types of Logic Gates and there names are given below:
+1) OR Gate
+2) AND Gate
+3) NOT Gate
+
+* The OR gate means Addition.
+* The AND gate means Multiplication.
+* The NOT gate means Inverter means (it inverts the inputs).
+ The Combinaions are given or found by the formula which is given below:
+>>  No. of combinations =  2^n
+ Like if we have two elements then total number of combinartions are = 4.
+ 
+ A    B   A'   B'   A+B    A*B  A'+B  (A')*B   A+(B')  A*(B')   (A+B)'  (A*B)'
+ 0    0   1    1     0      0     1      0       0      0         1        1
+ 0    1   1    0     1      0     1      1       0      0         0        1
+ 1    0   0    1     1      0     0      0       1      1         0        1
+ 1    1   0    0     1      1     1      0       1      0         0        0
+ 
+ Hence thats all for today.
+ From the desk of Muhammad Mukarram Asad.
+ 

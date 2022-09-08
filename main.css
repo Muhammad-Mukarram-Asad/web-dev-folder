@@ -1,0 +1,93 @@
+.sec1{
+	display: flex;
+	flex-direction: column;
+	background-color: #b7bcbe;
+
+}
+.heading{
+	background-color: white;
+	color: #e2a07f;
+	max-width: inherit;
+}
+.sec1 nav ul{
+	display: flex;
+	list-style: none;
+	flex-direction: row;
+	align-items: flex-start;
+	background-color: #898d8e;
+	margin: 1px;
+	max-width: inherit;
+	padding: 12px;
+}
+.sec1 nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	padding: 5px 10px;
+	
+}
+.sec1 nav ul li a:hover{
+	background-color: #7d9097;
+	color: black;
+}
+
+.company{
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	margin: 0px;
+	background-image: url(https://thumbs.dreamstime.com/z/symmetrical-mirrored-office-buildings-hong-kong-high-rise-reflecting-sunlight-harbour-city-tsim-sha-tsui-39859022.jpg);
+    height: 300px;
+    background-position: center;
+}
+#H2_1{
+	color: white;
+	margin: 0px;
+    padding-right: 130px;
+    padding-top: 200px;
+}
+#H2_2{
+	color: #d7794a;
+    margin: 0;
+    padding: 0 27px;
+}
+.sec2part1{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.sec2part1 h1{
+	color: #a95e39;
+}
+.sec2part2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#description{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0;
+}
+.sec3{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #1f3138;
+}
+#sec3part1{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+#sec3part1 h3{
+	color: #88553b;
+	margin: 0;
+	font-family: Open Sans ;
+	font-size: 66px;
+}
+#sec3part1 p{
+	color: white;
+	margin: 0;
+}

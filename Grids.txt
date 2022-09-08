@@ -1,0 +1,56 @@
+//Grids >> Apply to parent
+display: grid;
+
+//Gaps >> Apply to Parent
+grid-column-gap: ;
+grid-row-gap: ;
+//shorthand property
+grid-gap: row column;
+
+//Merging >> Apply to child
+//For column:
+   grid-column-start: grid column lines;
+   grid-column-end: grid column lines;
+//For Row:
+   grid-row-start: grid row lines;
+   grid-row-end: grid row lines;
+
+//How many columns >> Apply to parent
+grid-template-columns: 1st-column 2nd-column ........ nth-column;
+
+//Size of the rows
+//Apply to parent
+grid-template-rows: 1st-row, 2nd-row ........ nth-row;
+
+//Align horizontally
+//Apply to parent
+justify-content: space-evenly/space-around/space-between/center/start/end;
+
+//Align vertically
+//Apply to parent
+align-items: center/space-evenly/space-around/space-between/start/end;
+
+
+//Grid items >> Apply on child
+grid-column: 1 / 5;
+grid-column: 1 / span 3;
+
+grid-row: 1 / 5;
+grid-row: 1 / span 3;
+
+
+grid-area: grid-row-start/grid-column-start/grid-row-end/grid-column-end
+
+
+
+
+
+
+
+1 website using HTML/CSS
+1 website responsive website 
+1 PSD to HTML
+1 SAss website
+1 framework website
+1 mini js
+1 full website HTML/CSS/JS

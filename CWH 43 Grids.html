@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-fit and Min/Max</title>
+    <style>
+        .container{
+            /* CSS Grid Tutorial : 43 */
+
+            display: grid;
+            gap: 1rem;
+            /* For making it responsive we use following grid property. */
+            /* grid-template-columns: repeat(auto-fit , minmax(300px , 1frpx) ); */
+
+            /* CSS Grid Tutorial : 44 */
+
+            /* Use of grid-template-areas for making layouts easily. */
+            grid-template-areas: 
+            "navbar navbar navbar"
+            "section section article"
+            "footer footer footer" ;
+        }
+            
+        .box{
+            
+            border: 2px solid red;
+            color: black;
+            background-color: aliceblue;
+            padding: 20px;
+            
+        }
+        #navbar {
+            grid-area: navbar;
+        }
+        #section {
+            grid-area: section;
+        }
+        #article {
+            grid-area: article;
+        }
+        footer{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">Home Servicces About Us </div>
+        <div id="section" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque debitis nesciunt magnam voluptates perspiciatis quia eos illo, similique, modi dolorem ullam consequuntur error dolorum odio labore.
+             Molestias fugit facilis labore quisquam ratione commodi aspernatur.</div>
+        <div id="article" class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eius harum voluptatum officiis iure? Eveniet maiores excepturi cum quisquam ad quos aut fuga architecto quibusdam officia quia aliquam
+             maxime facere laboriosam sunt ab molestias recusandae tenetur, perspiciatis itaque iste qui?</div>
+        <footer class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Odit eum id similique iure debitis facere corporis repudiandae quae omnis asperiores.
+        </footer>
+        <!-- <div class="box">I am box 1</div>
+        <div class="box">I am box 2</div>
+        <div class="box">I am box 3</div>
+        <div class="box">I am box 4</div>
+        <div class="box">I am box 5</div>
+        <div class="box">I am box 6</div>
+        <div class="box">I am box 7</div>
+        <div class="box">I am box 8</div>
+        <div class="box">I am box 9</div>
+        <div class="box">I am box 10</div>
+        <div class="box">I am box 11</div>
+        <div class="box">I am box 12</div> -->
+
+    </div>
+    
+</body>
+</html>

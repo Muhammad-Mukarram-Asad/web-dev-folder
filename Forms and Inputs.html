@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms and Inputs</title>
+    <meta charset="utf-08">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        form {
+            background-color: lightgrey;
+
+
+
+        }
+
+        .form-portion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            display: block;
+            font-family: 'Baloo Bhai 2', cursive;
+            width: 80%;
+            margin: 15px auto;
+        }
+
+        .form-portion input {
+            border: 2px solid black;
+            border-radius: 16px;
+
+        }
+
+        .buttons {
+            display: inline-block;
+            width: 44%;
+            margin-left: 70px;
+            padding: 15px 20px;
+            border: 2px solid grey;
+            border-radius: 28px;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+
+        /* form input{
+            color: black;
+            padding-inline: 35px;
+           
+        }
+        form #name{
+            padding-right: 50px;
+        }
+        form #age{
+            padding-right: 80px;
+            width: 40px;
+           margin-inline: 80px;
+            
+        }
+        form #dob{
+              padding-left: 30px;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1> A simple try to make a information filling form which is given as follows:</h1>
+    <form action="backend-php">
+        <div class="form-portion">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="myName" id="name">
+            </div>
+            <div>
+                <label for="fname">Father Name:</label>
+                <input type="text" name="myfname" id="fname">
+            </div>
+            <div>
+                <label for="Pakistani"> Are you from Pakistan:</label>
+                <input type="checkbox" name="pakistani" id="Pakistani">Yes
+                <input type="checkbox" name="pakistani" id="Pakistani">No
+
+            </div>
+            <div>
+                <label for="qualification">Qualification:</label>
+                <input type="text" name="myqualification" id="qualification">
+            </div>
+            <div>
+                <label for="status">Current Status:</label>
+                <input type="tel" name="status" id="status">
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" name="myage" id="age">
+            </div>
+            <div>
+                <label for="contact">Contact Number:</label>
+                <input type="number" name="contact number" id="contact">
+            </div>
+            <div>
+                <label for="dob"> Enter your Date of Birth:</label>
+                <input type="date" name="date of birth" id="dob">
+            </div>
+            <div>
+                <label for=" Car choice">Cars You Like:</label>
+                <select name="cars" id="Car choice">
+                    <option value="corolla">Corolla</option>
+                    <option value="civic">Civic</option>
+                    <option value="city">City</option>
+                    <option value="swift">Swift</option>
+                    <option value="vitz">Vitz</option>
+                    <option value="bmw">BMW</option>
+                </select>
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id="gender"> Male
+                <input type="radio" name="gender" id="gender"> Female
+                <input type="radio" name="gender" id="gender"> Other
+            </div>
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Submit now">
+            <input type="reset" value="Reset now">
+        </div>
+
+    </form>
+</body>
+
+</html>

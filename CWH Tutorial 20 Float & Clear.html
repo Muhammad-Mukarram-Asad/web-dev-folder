@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Float & Clear </title>
+    <meta charset="utf-08">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <style>
+        .container {
+            width: 900px;
+            border: 3px solid rgb(211, 102, 83);
+            background-color: sandybrown;
+            margin: 33px auto;
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(180, 147, 147);
+            font-family:monospace;
+        }
+        #fruit{
+            float: left;
+            width:48%;
+        }
+        #computer{
+            float: right;
+            width:48%;
+        }
+        #stationary{
+             clear:both;  
+             /*clear doesn't allows the float to overlap it. */
+            width:max-width;
+        }
+        #crockery{
+            width:max-width;
+        }
+        p, h2{
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h2> Fruit</h2>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste praesentium
+                doloribus possimus voluptatem? Nostrum voluptate aut voluptates iusto. Inventore atque dolores deserunt
+                fugit accusantium dolore. Eaque provident ab, explicabo dolorum, cumque magni repellat vitae quidem
+                suscipit reiciendis ipsum, totam obcaecati?</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h2> Computer</h2>
+            <p id="computerpara" class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                praesentium doloribus possimus voluptatem? Nostrum voluptate aut voluptates iusto. Inventore atque
+                dolores deserunt fugit accusantium dolore. Eaque provident ab, explicabo dolorum, cumque magni repellat
+                vitae quidem suscipit reiciendis ipsum, totam obcaecati?</p>
+        </div>
+        <div id="stationary" class="item">
+            <h2> Stationary</h2>
+            <p id="stationarypara" class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                praesentium doloribus possimus voluptatem? Nostrum voluptate aut voluptates iusto. Inventore atque
+                dolores deserunt fugit accusantium dolore. Eaque provident ab, explicabo dolorum, cumque magni repellat
+                vitae quidem suscipit reiciendis ipsum, totam obcaecati?</p>
+        </div>
+
+        <div id="crockery" class="item">
+            <h2> Crockery</h2>
+            <p id="crockerypara" class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                praesentium doloribus possimus voluptatem? Nostrum voluptate aut voluptates iusto. Inventore atque
+                dolores deserunt fugit accusantium dolore. Eaque provident ab, explicabo dolorum, cumque magni repellat
+                vitae quidem suscipit reiciendis ipsum, totam obcaecati?</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

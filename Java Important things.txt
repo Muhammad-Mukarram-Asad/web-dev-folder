@@ -1,0 +1,23 @@
+It is important in java at the time of printing the array of any type :
+System.out.println(" Printing array:" + Arrays.toString(arr));
+
+An array stores a sequence of values that are all of the same type. We want not just to store values but
+also to be able to quickly access each individual value. The length of an array is established when the
+array is created. After creation, its length is fixed. Each item in an array is called an element, and each
+element is accessed by its numerical index. The method that we use to refer to individual values in an
+array is to number and then index them—if we have n values, we think of them as being numbered from 0
+to n−1.
+Making an array in a Java program involves involves three distinct steps:
+● Declare the array name.
+● Create the array.
+● Initialize the array values.
+We refer to an array element by putting its index in square brackets after the array name.
+To use an array in a program, you must declare a variable to reference the array and specify
+the array’s element type. Here is the syntax for declaring an array variable:
+
+String Class in Java
+import java.lang.String
+
+Math Class in Java
+import java.lang.Math   or  java.lang.Math.* ;
+

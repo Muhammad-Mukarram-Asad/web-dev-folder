@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project 1 </title>
+    <link rel="stylesheet" href="CSS Files/Project 1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Italianno&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0;
+            height: 1000px;
+            background: url("https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGd5bXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+            background-repeat : no-repeat;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            /* border: 2px solid red; */
+            left: 34px;
+            top: 25px;
+            text-align: center;
+
+
+        }
+
+
+        .left img {
+            width: 80px;
+            /* For inverting an image means change its color from black to white and white to black. */
+            /* filter: invert(100%); */
+        }
+
+        .left p {
+            text-align: center;
+            margin: 0;
+            line-height: 11px;
+            font-size: 25px;
+        }
+
+        .center {
+            display: block;
+            width: 76%;
+            margin: 25px auto;
+            font-size: 20px;
+            /* border: 2px solid green; */
+
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            /* border: 2px solid blue; */
+            right: 350px;
+            top: 40px;
+        }
+
+        .btn {
+            color: khaki;
+    background-color: #18b3c7;
+    padding: 4px 14px;
+    margin: 3px 6px;
+    border: 2px solid grey;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: darkgrey;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: #e91e63;
+            padding: 25px 20px;
+        }
+
+        .navbar li a:hover,
+        a:active {
+            text-decoration: underline;
+            color: black;
+
+        }
+
+        .container {
+            color: #3f57dd;;
+            width: 500px;
+            /* border: 2px solid #2196f3; */
+            border-radius: 10px;
+            margin: 60px 30px;
+            padding: 60px;
+            text-align: center;
+            
+        }
+        
+
+        .form-group input {
+            font-size: 20px;
+            display: block;
+            width: 80%;
+            border: 2px solid black;
+            border-radius: 16px;
+            margin: 11px auto;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .btn1{
+            display: block;
+    width: 80%;
+    margin: auto;
+    padding: 4px 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://seeklogo.com/images/F/fitness-gym-logo-9191CD4CF2-seeklogo.com.png">
+            <p>Mukarram's Gym </p>
+
+        </div>
+
+        <div class="center">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active"> Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#"> Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+        <div class="right">
+            <button class="btn"> Search Here</button>
+            <button class="btn"> Help</button>
+            
+
+
+        </div>
+    </header>
+    <div class="container">
+        <h1> Join this Fantastic Gym Now</h1>
+        <form action="no action.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Age">
+            </div>
+
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Address">
+            </div>
+
+        </form>
+        <button class="btn1">Submit</button>
+
+    </div>
+
+</body>
+
+</html>

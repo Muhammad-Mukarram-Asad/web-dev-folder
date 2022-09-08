@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries with Grids this Time</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 1rem;
+            /* grid-template-columns: repeat (auto-fit , minmax(400px , 1fr) ); */
+            grid-template-areas:
+                "navbar navbar navbar navbar"
+                "section section section section"
+                "article article article article"
+                "details details details details"
+                "footer footer footer footer"
+        }
+
+        @media only screen and (max-width:200px) {
+            body {
+                background-color: grey;
+            }
+
+            .container {
+                grid-template-areas:
+                    "navbar navbar navbar navbar"
+
+            }
+
+        }
+
+        @media only screen and (min-width:201px) and (max-width:300px) {
+            body {
+                background-color: darkgrey;
+            }
+
+            .container {
+                grid-template-areas:
+                    "navbar navbar navbar navbar"
+                    "details details details details"
+
+            }
+        }
+
+        @media only screen and (min-width:301px) and (max-width:400px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                grid-template-areas:
+                    "navbar navbar navbar navbar"
+                    "details details details details"
+                    "article article section section"
+
+            }
+
+        }
+
+        @media only screen and (min-width:401px) and (max-width:500px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                grid-template-areas:
+                    "navbar navbar navbar navbar"
+                    "details details details details"
+                    " section section article article"
+                    "footer footer footer footer"
+            }
+        }
+
+        @media only screen and (min-width:501px) and (max-width:600px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+
+                grid-template-areas:
+                    "section section section section"
+                    "article article article article"
+                    "details details details details"
+                    "navbar navbar navbar navbar"
+            }
+        }
+
+        .box {
+            border: 2px solid grey;
+            color: rgb(119, 135, 209);
+            background-color: aliceblue;
+            padding: 20px;
+
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #article {
+            grid-area: article;
+        }
+
+        #details {
+            grid-area: details;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="box">
+            Home Services Testimonials About-Us
+        </div>
+        <div id="section" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam corrupti incidunt autem id
+            nam iure odit molestiae eaque? Maxime eligendi aut nemo voluptates? Deserunt sed tenetur,
+            et earum maxime quaerat odio ipsam. Amet aliquam soluta, iure distinctio molestiae suscipit.
+        </div>
+        <div id="article" class="box">
+            This is an Article side of the layout.
+        </div>
+        <div id="details" class="box">
+            <h3> This is the details tag section. Details tag in HtML5 is the key key element in which
+                we easily make a description of anything.
+            </h3>
+            <summary>
+                Meaning of Pakistan
+            </summary>
+            <details>
+                <i>The name Pakistan means literally "a land abounding in the pure" or "a land in which the pure
+                    abound", in Urdu and Persian. It references the word پاک (pāk), meaning "pure" in Persian and
+                    Pashto.</i> <strong>The First Islamic Country
+                    on the orld map.</strong>
+            </details>
+        </div>
+    </div>
+    <footer class="box">
+        Created By <span style="color: black;">Muhammad Mukarram Asad</span>. &copy; All rights reserved.&dollar;
+    </footer>
+
+</body>
+
+</html>

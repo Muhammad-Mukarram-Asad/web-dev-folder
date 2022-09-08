@@ -1,0 +1,41 @@
+ Some important things for html ,css ,js :
+whenever to save any file we have to save it with correct extensions.
+
+HTML tags also known as HTML elements.
+
+ScreenShot is also in Mobile of file extensions.
+
+<Head> vs <Body>
+
+Head ==> About the web page.
+
+Body ==> About the information of the web page.
+
+There are two types of HTML elements:
+1) With opening tag and closing tag.
+2) Self closing elements.
+
+Self closing tags are those tags which we donot show on the web page but its property we want to show.
+
+like for example : Image tag.
+<img> or <img />
+
+<input type = "Password">     # type = Attribute
+
+<input type = "email">
+<input type = "number">
+<input type = "date">
+<input type = "text"> 
+<input type = "submit" value = "click me">
+
+All programming languages are same but there is only one difference among all is that of Syntax.
+
+  Headings and paragraphs all are Block elements.
+  And the rest of all are In-line elements.
+
+<br> tag is also a self closing tag.
+
+placeholder is also an attribute which is used to  show some text which will be remove when we click on it.
+
+<label> Email: </label> <br>  <1-- > == > This is the method to perform comment in HTML.
+<input  type = "Email" placeholder = "Enter your Email" >

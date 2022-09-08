@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CSS Box Positions</title>
+
+    <style>
+        /* CSS Positions: Static , relative , absolute, fixedm sticky. */
+        .box {
+            border: 3px solid blue;
+            padding: 15px;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+
+        }
+        .container{
+            border: 3px solid black;
+            height: 3000px;
+        }
+
+        #box1 {
+            /* fixed is used when we don't want the targeted box move when we scrolling in the browser. */
+            position: fixed;
+            bottom: 25px;
+
+        }
+
+        #box2 {
+            /* absolute>> is used where we change the position w.r.t parent. */
+
+            position: absolute;
+            
+        }
+
+        #box3 {
+            /* relative>> is used where we change the position w.r.t normal position and leave a gap. */
+            position: relative;
+            top: 20px;
+            left: 25px;
+        }
+
+        #box4 {
+            position: sticky;
+            top:10px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

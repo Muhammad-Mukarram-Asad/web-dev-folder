@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Transform Property of CSS</title>
+	<style type="text/css">
+
+	p{
+		transform: translate(10px, 30px);
+		color: green;
+		font-family: sans-serif;
+		font-size: 30px;
+	}
+	#property{
+		font-family: Arial, Helvetica, sans-serif;
+        /*border-collapse: collapse;*/
+        border:  2px solid black;
+        width: 100%;
+	}
+	#property td th {
+        border: 5px solid #ddd;
+        padding : 5px;
+  
+}
+    #property tr:nth-child(even){
+       background-color: #f2f2f2;
+}
+
+#property tr:hover {
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+#property th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #04AA6D;
+  color: white;
+  text-align: center;
+}
+#property td{
+	text-align: center;
+}
+		
+	</style>
+	
+</head>
+<body>
+		<h1> Transform Properties and their description</h1>
+		<h2> Property Values </h2>
+		<p> The following table describes the values of this property.</p>
+
+		<table id = "property">
+			<tr>
+				<th> Property</th>
+				<th> Description</th>
+			</tr>
+			<tr>
+				<td>translate(tx,ty)</td>
+				<td >Moves the element by the given amount along the X and Y-axis. </td>
+			</tr>
+			<tr>
+				<td>translate3d(tx,ty,tz)</td>
+				<td>Moves the element by the given amount along the X, Y & Z-axis. </td>
+			</tr>
+			<tr>
+				<td> translateX(tx)</td>
+				<td>Moves the element by the given amount along the X-axis. </td>
+			</tr>
+			<tr>
+				<td>translateY(ty)</td>
+				<td>Moves the element by the given amount along the Y-axis. </td>
+			</tr>
+			<tr>
+				<td>translateZ(tz)</td>
+				<td>Moves the element by the given amount along the Z-axis. </td>
+			</tr>
+			<tr>
+				<td>rotate(a)</td>
+				<td>Rotates the element by the specified angle around the origin of the element, as defined by the transform-origin property. </td>
+			</tr>
+			<tr>
+				<td>rotate3d(x,y,z,a)</td>
+				<td>Rotates the element in 3D space by the angle specified in the last parameter, around the [x,y,z] direction vector. </td>
+			</tr>
+			<tr>
+				<td>rotateX(a)</td>
+				<td>Rotates the element by the given angle around the X-axis. </td>
+			</tr>
+			<tr>
+				<td>rotateY(a)</td>
+				<td>Rotates the element by the given angle around the Y-axis. </td>
+			</tr>
+			<tr>
+				<td>rotateZ(a)</td>
+				<td>Rotates the element by the given angle around the Z-axis. </td>
+			</tr>
+			<tr>
+				<td>scale(sx,sy)</td>
+				<td>Scale the width and height of the element up or down by the given amount. The function scale(1,1) has no effect.
+ </td>
+			</tr>
+			<tr>
+				<td>scale3d(sx,sy,sz)</td>
+				<td>Scales the element by the given amount along the X, Y and Z-axis. The function scale3d(1,1,1) has no effect. </td>
+			</tr>
+			<tr>
+				<td>scaleX(sx)</td>
+				<td>Scales the element along the X-axis.</td>
+			</tr>
+			
+			<tr>
+				<td>scaleY(sy)</td>
+				<td>Scales the element along the Y-axis.</td>
+			</tr>
+			<tr>
+				<td>scaleZ(sz)</td>
+				<td>Scales the element along the Z-axis.</td>
+			</tr>
+
+			<tr>
+				<td>skew(ax,ay)</td>
+				<td> Skews the element by the given angle along the X and Y-axis.</td>
+			</tr>
+
+			<tr>
+				<td>skewX(ax)</td>
+				<td> Skews the element by the given angle along the X-axis.</td>
+			</tr>
+
+			<tr>
+				<td>skewY(ay)</td>
+				<td> Skews the element by the given angle along the Y-axis.</td>
+			</tr>
+			<tr>
+				<td>matrix(n,n,n,n,n,n)</td>
+				<td> Specifies a 2D transformation in the form of a transformation matrix comprised of the six values.</td>
+			</tr>
+			<tr>
+				<td>matrix(n,n,n,n,n,n, n,n,n,n,n,n,n,n,n,n)</td>
+				<td> Specifies a 3D transformation in the form of a 4×4 transformation matrix of 16 values.</td>
+			</tr>
+		</table>
+		<summary>
+			<details> 
+				<ol type="1">
+					<li>
+						Perspective(length): Defines a perspective view for a 3D transformed element. 
+					</li>
+					<ol type="i">
+					     <li> In general, as the value of this function increases, the element will appear further away from the viewer. </li>
+					</ol>
+					<li> none: Specifies that no transform should be applied.</li>
+					<li> initial: Sets this property to its default valuee.</li>
+					<li> inherit:	If specified, the associated element takes the computed value of its parent element transform property.</li>
+				</ol>
+						
+					
+                  </details>
+ 		</summary>
+
+	
+
+</body>
+</html>
+
+	

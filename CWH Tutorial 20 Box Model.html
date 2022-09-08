@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-08">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA Compatible" content="ie-edge">
+    <title> Box Model Padding Margin</title>
+    <style>
+        /* Below is the Universal selector */
+        *{
+            box-sizing: border-box;
+           background-color: cyan;
+        }
+        .container{
+            background-color: azure;
+            border:3px solid rgb(100,80, 60);
+            /* padding sequence is given below ;
+            padding-top;
+            padding-bottom;
+            padding-left: ;
+            padding-right: ; */
+            /* padding-top:10px;
+            padding-left:10px; */
+            /* Same thing with amrgin as well. */
+            /* padding top/bottom left/right >>> shortcut key. */
+            padding: 34px 19px;
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 233px;
+            /* There is a property which sets the width of the box and its name is box-sizing. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+            <h1> This is heading number 1 </h1>
+            <p id="p1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, accusantium. Ea, corporis!
+                Dolore quam ratione vero eligendi veritatis dolores soluta ullam quod qui nostrum ut architecto id,
+                ipsum itaque sapiente.</p>
+        </div>
+        <div class = "container">
+            <h2> This is heading number 2</h2>
+            <p id="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis amet iusto sapiente
+                assumenda corporis sint fugit voluptatum facilis animi voluptates! Corporis magnam maiores culpa
+                doloribus minus distinctio, iure, reiciendis laborum soluta placeat perspiciatis est amet iste eveniet
+                debitis ipsum provident!</p>
+
+        </div>
+
+        <div class = "container">
+            <h3> This is heading number 3</h3>
+            <p id="p3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia possimus, recusandae dolorem
+                quasi nisi aut ipsa necessitatibus iusto voluptatum iure eveniet eaque exercitationem rem, vitae eos,
+                dolores in alias dignissimos? Voluptate, quaerat.</p>
+
+        </div>
+</body>
+
+</html>

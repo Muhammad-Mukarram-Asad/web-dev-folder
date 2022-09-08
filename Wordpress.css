@@ -1,0 +1,109 @@
+/* body{
+	background-color: lightgrey;
+} */
+.sec1{
+	background-color: blue;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	width: 98%;
+}
+.sec1 h2{
+	padding-top: 10px;
+    padding-left: 20px;
+	width: 150px;
+}
+
+#btn1{
+	background-color: black;
+	width: 200px;
+	height: 50px;
+    font-size: 15px;
+    color: white;
+	margin-left: 52%;
+	margin-top: 20px;
+}
+
+#search_btn
+{
+	width: 200px;
+	height: 50px;
+	color: black;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: lightblue;
+	margin-left: 30px;
+}
+.sec2{
+	display: flex;
+	flex-direction: row;
+}
+.sec2 nav ul{
+	display: flex;
+	list-style: none;
+	flex-direction: row;
+	justify-content: flex-start;
+	
+}
+.sec2 nav ul li a{
+	text-decoration: none;
+	color: blue;
+	font-size: 18px;
+	padding: 16px;
+	text-align: center;
+}
+.dropdownLi
+{
+	color: black;
+	list-style: lower-alpha;
+	background-color: white;
+	font-size: 25px;
+	cursor: pointer;
+	margin: 5px;
+}
+.dropdownLi:hover
+{
+	color: white;
+	background-color: black;
+}
+
+.sec2 nav ul li a:hover
+{
+	cursor: pointer;
+	color: white;
+	background-color: black;
+}
+.inp{
+	justify-content: flex-end;
+	margin: 14px;
+	text-align: center;
+	border-radius: 30px;
+}
+
+#right_arrow_ul 
+{
+	position: relative;
+}
+#li_items
+{
+	position: absolute;
+	margin-top: -25px;
+	width: 200px;
+	height: 100px;
+}
+.icon
+{
+	display: none;
+}
+.fa-bars
+{
+	cursor: pointer;
+	font-size: 50px;
+	color: white;
+	margin-top: 30px;
+}
+
+

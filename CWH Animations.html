@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animations</title>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        .container {
+            background-color: blue;
+            display: flex;
+            justify-content: space-evenly;
+            height: 500px;
+        }
+
+        .box {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 200px;
+            border: 3px soild black;
+            background-color: pink;
+            position: relative;
+            /* animation-name: Mukarram2; */
+
+            animation-name: Mukarram1;
+
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            /* animation-direction: forwards;
+            animation-fill-mode: forwards; */
+            animation-play-state: running;
+            animation-timing-function: ease-in-out; 
+            animation-delay: 1s;
+        }
+
+        @keyframes Mukarram2 {
+            0% {
+                top: 0;
+                left: 0;
+                background-color: red;
+
+            }
+
+            25% {
+                top: 150px;
+                left: 0px;
+                background-color: green;
+            }
+
+            50% {
+                top: 150px;
+                left: 150px;
+                background-color: blue;
+            }
+
+            100% {
+                top: 0px;
+                left: 150px;
+                background-color: yellow;
+            }
+        }
+
+        @keyframes Mukarram1 {
+            from {
+                width: 200px;
+                background: linear-gradient(red, green);
+            }
+
+            to {
+                width: 400px;
+                background: linear-gradient(blue, purple);
+            }
+        }
+        #box1{
+            height: 200px;
+            width: 300px;
+            background-color: cyan;
+            color: black;
+            transition-property: background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box1:hover{
+            background-color: white;
+            color: blue;
+            height: 400px;
+            width: 400px;
+            border-radius: 10px;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This box is related to Animation.
+        </div>
+
+        <div id="box1">
+            This box is related to Transition.
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Units</title>
+</head>
+<style>
+    .box {
+        font-size: 60px;
+        background-color: aqua;
+        color: white;
+        text-align: center;
+        display: none;
+    }
+
+    @media only screen and  (min-width:200px) and (max-width:300px) {
+        #box1 {
+            display: block;
+            background-color: red;
+        }
+    }
+
+    @media (min-width:300px) and (max-width:500px) {
+        #box2 {
+            display: block;
+            background-color: orange;
+            color:black
+
+        }
+    }
+
+    @media (min-width:500px) and (max-width:700px) {
+        #box3 {
+            display: block;
+            color: black;
+            background-color: green;
+
+        }
+    }
+
+    @media (min-width:700px) {
+        #box4 {
+            display: block;
+            color: black;
+            background-color: blue;
+
+        }
+    }
+</style>
+
+<body>
+    <!-- /* vh, vw, em , rem are the responsive units. */ -->
+
+    <!-- em applies where we want our element to be same as its parent. Like if the parent has the  
+    font size 10px so the element which we want to be same will work as follows:
+
+    h1 {
+        font-size:10ox; so 10 x 10 = 100px.
+    }
+    so em works like this. -->
+
+    <!-- rem applies when we want to set our whole website font size same. -->
+
+    <!-- vh view height , full height.
+    vw = view port ,  full width. -->
+
+    <div class="box" id="box1"> I am the Mobile Screen.</div>
+    <div class="box" id="box2"> I am the tablet Screen.</div>
+    <div class="box" id="box3"> I am the Computer Screen.</div>
+    <div class="box" id="box4"> I am the wide Screen of a computer.</div>
+
+
+</body>
+
+</html>

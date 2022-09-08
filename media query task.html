@@ -1,0 +1,64 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Stack overFlow Media Query </title>
+
+		<style type="text/css">
+			body
+			{
+			  margin: 0;
+			  background-image: url("img_tree.gif");
+			  background-repeat: no-repeat;
+			  background-attachment: scroll;
+}
+			
+			img 
+			{
+               display: block;
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: full;
+            }
+
+			@media (min-width: 650px) 
+			{
+				  img 
+				  {
+				    display: none
+				  }
+			}
+
+			#image
+			{
+			  display: block;
+			  width: 100%;
+			  background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+			}
+
+			@media (max-width: 650px)
+			 {
+			  #image {
+			    display: none
+			  }
+			}
+		</style>
+	</head>
+
+	<body>
+		<p> As there are 5 types of background-attachment property. but two of them are very important or use mostly <br> 
+		    <ol>
+		    <li> scroll(default value) or local(related to default)</li>
+		    <li> Fixed </li>
+		</ol>
+		    </p>
+		<img src="https://images.unsplash.com/photo-1546587348-d12660c30c50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJhbHxlbnwwfHwwfHw%3D&w=1000&q=80">
+
+		<img src="https://images.unsplash.com/photo-1610878180933-123728745d22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FuYWRhJTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80" id="image">
+
+	
+	</body>
+	</html>

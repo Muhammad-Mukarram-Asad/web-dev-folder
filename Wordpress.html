@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>How to do a website speed test</title>
+	<link rel="stylesheet" type="text/css" href="Wordpress.css">
+	<script src="wordpress.js"></script>
+	<script src="https://kit.fontawesome.com/256d4e5c41.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://fontawesome.com/v5.15/icons/wordpress?style=brands">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+		integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<style>
+		.fa-wordpress {
+			font-size: 40px;
+			padding-top: 16px;
+			padding-right: 3px;
+
+		}
+
+		.fa-chevron-right {
+			padding-top: 31px;
+			padding-left: 14px;
+			font-size: 23px;
+			cursor: pointer;
+
+		}
+
+		@media screen and (max-width: 600px) {
+			body {
+				background-color: lightblue;
+
+			}
+
+			.fa-chevron-right {
+				display: none;
+			}
+
+			#btn1 {
+				display: none;
+			}
+
+			.sec1 a .icon {
+				float: right;
+				display: block;
+
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			.sec1.responsive {
+				position: relative;
+			}
+
+			.sec1.responsive .icon {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+
+			.sec1.responsive #rightArrow #h2 #btn1 {
+				float: none;
+				display: block;
+				text-align: left;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="sec1" id="section1">
+		<style type="text/css">
+		</style>
+		<i class="fab fa-wordpress"></i>
+		<h1>WordPress.com</h1>
+		<i class="fas fa-chevron-right" id="rightArrow" onmouseover="dropdown()" onmouseout="original()"></i>
+		<ul id="right_arrow_ul" style="display: none;">
+			<div id="li_items">
+				<li class="dropdownLi"> Expert Tip 1</li>
+				<li class="dropdownLi"> Expert Tip 2</li>
+				<li class="dropdownLi"> Expert Tip 3</li>
+			</div>
+		</ul>
+
+		<h2 id="h2"> Expert Tips </h2>
+		<button id="btn1">Create Your Own Website</button>
+
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i> </a>
+
+	</div>
+
+	<div class="sec2" id="section2">
+		<nav>
+			<ul>
+				<li><a href="#"> Go by wordPress.com </a></li>
+				<li><a href="#"> | </a></li>
+				<li><a href="#"> Website Building </a></li>
+				<li><a href="#"> Web Design </a></li>
+				<li><a href="#"> Content & Blogging</a></li>
+				<li><a href="#"> Digital Marketing </a></li>
+				<li><a href="#"> Tutorials </a></li>
+
+			</ul>
+		</nav>
+
+		<div class="inp">
+			<style type="text/css">
+				.fa-search {
+					font-size: 20px;
+					color: black;
+				}
+			</style>
+			<button id="search_btn"> <i class="fas fa-search"></i> Search tips </button>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

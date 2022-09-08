@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+h1
+{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 60px 0;
+}
+.parent
+{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftPart
+{
+    width: 50%;
+    padding: 0 5%;
+    line-height: 1.6;
+    text-align: justify;
+}
+.rightPart
+{
+    width: 50%;
+    text-align: center;
+    padding: 0;
+}
+.rightPart img
+{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+            /* Media Queries Started From on-wards: */
+
+
+
+            /* For Desktop and Laptop Devices */
+
+            @media (min-width: 1024px)
+            {
+                h1
+                {
+                    color: green;
+                    font-family: cursive;
+                    margin-bottom: 60px;
+                }
+                .leftPart p
+                {
+                    color: red;
+                    /* word-spacing: 10px; */
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+
+            /* For Tablets and i-Pads */
+
+            @media (min-width: 769px ) and (max-width : 1023px)
+            {
+                h1
+                {
+                    color: black;
+                    text-transform: uppercase;
+                    display: block;
+                    margin-bottom: 18%;
+                }
+
+                .leftPart p
+                {
+                    color: blue;
+                    /* word-spacing: 10px; */
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+
+            }
+
+            /* Mobile Devices */
+
+            @media (max-width: 768px) {
+                h1{
+                    color: red;
+                }
+                .parent
+                {
+                    /* display: block; */
+                       display: flex;
+                       flex-direction: column;
+                       /* justify-content: center;
+                       align-items: center; */
+                }
+                .rightPart
+                {
+                    width: 100%;
+                }
+
+                /* For making an image responsive */
+                
+                .rightPart img 
+                {
+                    width: 100%;
+                    height: auto;
+                    padding: 5%;
+                }
+                .leftPart
+                {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                
+            }
+
+            @media (max-width: 468px)
+            {
+                .rightPart img 
+                {
+                    padding: 10%;
+                }
+            }
